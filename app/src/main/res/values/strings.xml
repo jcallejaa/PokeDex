@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">PokeDex</string>
+    <string name="title_item_detail">Item Detail</string>
+    <string name="detail_name_title">Name</string>
+    <string name="requestFailure">Error processing request</string>
+    <string name="errorInvalidPokemonId">Error: Invalid PokemonId</string>
+    <string name="detail_height_title">Height</string>
+    <string name="detail_weight_title">Weight</string>
+    <string name="detail_types_title">Types</string>
+    <string name="search_hint">Search pokemon</string>
+    <string name="defaultNetworkError">Connection failed. Please try again later</string>
+    <string name="defaultError">Unexpected error. Please try again later.</string>
+</resources>

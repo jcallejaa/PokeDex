@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/default_background"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+<androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/detailPadding">
+
+    <TextView
+        android:id="@+id/l_name"
+        style="@style/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/detail_name_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvName"
+        style="@style/content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/elementMargin"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/l_name"
+        tools:text="Bulbasaur" />
+
+
+    <ImageView
+        android:id="@+id/sprite"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/pokemon_background"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@drawable/sample" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/spriteLoading"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:lottie_autoPlay="true"
+        app:lottie_fileName="pokemon_loading.json"
+        app:lottie_loop="true" />
+
+    <TextView
+        android:id="@+id/l_height"
+        style="@style/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/elementBigMargin"
+        android:text="@string/detail_height_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sprite" />
+
+    <TextView
+        android:id="@+id/tvHeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        style="@style/content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/l_height"
+        tools:text="0"/>
+
+    <TextView
+        android:id="@+id/l_weight"
+        style="@style/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/elementBigMargin"
+        android:layout_marginTop="@dimen/elementBigMargin"
+        android:text="@string/detail_weight_title"
+        app:layout_constraintStart_toEndOf="@+id/l_height"
+        app:layout_constraintTop_toBottomOf="@+id/sprite" />
+
+    <TextView
+        android:id="@+id/tvWeight"
+        style="@style/content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/elementBigMargin"
+        android:text=""
+        app:layout_constraintStart_toEndOf="@+id/l_height"
+        app:layout_constraintTop_toBottomOf="@+id/l_weight"
+        tools:text="0" />
+
+    <TextView
+        android:id="@+id/l_types"
+        style="@style/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/elementBigMargin"
+        android:text="@string/detail_types_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvHeight" />
+
+    <TextView
+        android:id="@+id/tvTypes"
+        style="@style/content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/l_types"
+        tools:text="Water..." />
+</androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>
