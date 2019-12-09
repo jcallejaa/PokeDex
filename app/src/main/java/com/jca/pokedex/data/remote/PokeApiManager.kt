@@ -18,24 +18,17 @@ class PokeApiManager : PokeRepository {
 
     }
 
-    private lateinit var pokeApiClient : PokeApiClient
+    private var pokeApiClient = PokeApiClient()
 
     override fun getPokemonData(pokemonId: Int): PokemonData? {
         return try {
-            val pokemonApiData = getPokeApiClient().getPokemon(pokemonId)
+            val pokemonApiData = pokeApiClient.getPokemon(pokemonId)
             PokemonDataMapper.getInstance().map(pokemonApiData)!!
         } catch (e: Exception) {
             //Log.e(TAG, "Error trying to get pokemon $pokemonId")
             null
         }
 
-    }
-
-    fun getPokeApiClient(): PokeApiClient{
-        if (pokeApiClient==null){
-            pokeApiClient = PokeApiClient()
-        }
-        return pokeApiClient
     }
 
     fun setPokeApiClient(client: PokeApiClient) {
@@ -49,7 +42,7 @@ class PokeApiManager : PokeRepository {
     }
 
     override fun getPokemonsList(start: Int, end: Int): PokemonsList {
-        val pokemonApiDataList = getPokeApiClient().getPokemonList(start, end)
+        val pokemonApiDataList = pokeApiClient.getPokemonList(start, end)
 
         var resultArray = ArrayList<PokemonListElement>()
 
