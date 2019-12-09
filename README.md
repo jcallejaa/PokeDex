@@ -33,7 +33,7 @@ And:
 - Lottie (Show vector animations)<br>
 
 ### Screenshots:
-![Screenshot 1](docs/screenshot1.png) ![Screenshot 2](docs/screenshot2.png)
+![Screenshot 1](docs/screenshot_1.png) ![Screenshot 2](docs/screenshot_2.png)
 
 
 
