@@ -14,12 +14,11 @@
 
 # PokeDex
 ----------
-A simple "Pokedex" consuming api in https://pokeapi.co (by implementing pokekotlin 2.3.0 wrapper) and using:
+A simple "Pokedex" consuming data in https://pokeapi.co and using:
 
 - Kotlin<br>
-- CleanCoede<br>
+- CleanCode<br>
 - MVP <br>
-- Kotlin<br>
 - Fragments<br>
 - ConstraintLayout<br>
 - RecycerView <br>
