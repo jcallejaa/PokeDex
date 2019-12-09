@@ -14,7 +14,7 @@
 
 # PokeDex
 ----------
-A simple "Pokedex" app using:
+A simple "Pokedex" consuming api in https://pokeapi.co (by implementing pokekotlin 2.3.0 wrapper) and using:
 
 - Kotlin<br>
 - CleanCoede<br>
@@ -29,7 +29,7 @@ A simple "Pokedex" app using:
 - SearchBar <br>
 
 And:
-- Glide (Loading Images in background), <br>
+- Glide (Loading Images in background) <br>
 - Lottie (Show vector animations)<br>
 
 ### Screenshots:
